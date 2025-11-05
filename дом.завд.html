@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картка Продукту</title>
+
+    <style>
+        /* Стилі для контейнера body, щоб відцентрувати картку на сторінці */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Стилі для картки продукту (.product-card) */
+        .product-card {
+            /* Розміри та оформлення */
+            width: 400px;
+            background-color: #e8e8ea;
+            padding: 30px;
+            border: 2px solid #03057c;
+
+            /* Розміщення дочірніх елементів (зображення та текст) у ряд по центру */
+            display: flex;
+            flex-direction: row; /* Розміщення у ряд */
+            justify-content: center; /* Центрування по горизонталі (уздовж ряду) */
+            align-items: center;    /* Центрування по вертикалі (уздовж поперечної осі) */
+        }
+
+        /* Стилі для зображення всередині картки */
+        .product-card img {
+            width: 200px;
+            border: 2px solid #b0b0b2;
+            margin-left: 30px; /* Зовнішній відступ зліва */
+            /* Видаляємо стандартний margin-right, якщо він є */
+            margin-right: 0; 
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* Стилі для текстового контейнера (щоб легко застосувати розмір тексту) */
+        .product-info {
+            /* Стилі для тексту */
+            font-size: 28px;
+            /* Зображення та текст будуть у ряду, text-align застосовується всередині .product-info */
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        
+        <div class="product-info">
+            <p>Помідор</p>
+            <p style="font-size: 20px; color: #03057c;">$99.99</p>
+        </div>
+
+        <img src="https://media.istockphoto.com/id/1189117605/uk/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D1%96-%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%96%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D1%96%D1%8F-%D0%B7%D0%B0%D0%B1%D0%B0%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B0-%D0%B2-%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D0%BF%D0%BB%D1%96%D0%BA%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%BE%D0%BC%D1%83-%D1%81%D1%82%D0%B8%D0%BB%D1%96.jpg?s=612x612&w=0&k=20&c=Glc-3YxoiWkOVG-9VUjy8yG3q-cW1_vT2y_Z1CsF4Uk=" alt="Зображення продукту">
+    </div>
+
+</body>
+</html>
